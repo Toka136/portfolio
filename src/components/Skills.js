@@ -1,0 +1,38 @@
+function Skills()
+{
+ return(
+    <div className="skilles_cont">
+        <h1 className="best">
+            my
+            <span>skills</span>
+        </h1>
+        <div className="skills">
+            <div className="skill">
+                <span>HTML 5</span>
+                <i class="fa-brands fa-html5"></i>
+            </div>
+            <div className="skill">
+                 <span>CSS 3</span>
+                <i class="fa-brands fa-css3"></i>
+            </div>
+            <div className="skill">
+                 <span>Bootstrap</span>
+            <i class="fa-brands fa-bootstrap"></i>
+            </div>
+            <div className="skill">
+                 <span>JavaScript</span>
+            <i class="fa-brands fa-js"></i>
+            </div>
+            <div className="skill">
+                 <span>React</span>
+            <i class="fa-brands fa-react"></i>
+            </div>
+            <div className="skill">
+                 <span>github</span>
+        <i class="fa-brands fa-github"></i>
+            </div>
+        </div>
+    </div>
+ )
+}
+export default Skills;
