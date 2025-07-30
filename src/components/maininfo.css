@@ -57,33 +57,7 @@
     line-height: 33px;
     margin-top: 40px;
 }
-.info .links
-{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-.links i
-{
-    margin-left: 20px;
-    font-size: 18px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    color: #9056d9;
-    border: 1px solid #6e06f2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-.links i:hover
-{
-    color: #6e06f2;
-
-}
+ 
 .info .buttons
 {
     display: flex;

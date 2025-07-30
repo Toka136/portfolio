@@ -26,6 +26,7 @@
 }
 .resume_tabs li a
 {
+     font-family: "Playfair Display", serif;
     text-decoration: none;
     color: #4e525a;
     font-size: 18px;
@@ -128,15 +129,49 @@
     align-items: center;
     justify-content: space-between;
 }
-/* .collage
+.contact_page >div
 {
-    position: relative;
+    margin-left: 40px;
+    margin-top: 20px;
 }
-.collage .abs
+.contact_page >div a:hover
 {
-    position: absolute;
-    left: 0;
-} */
+    color: #6e06f2;
+}
+.contact_page >div,
+.contact_page >div a
+{
+    text-decoration: none;
+    display: flex;
+    /* align-items: center; */
+    color: black;
+    
+}
+.contact_page >div i
+{
+    margin-right: 10px;
+    font-size: 20px;
+    color: black;
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.contact_page >div i:hover
+{
+    background-color: white;
+   color: #6e06f2;
+   border-color: #6e06f2;
+}
+.contact_page p
+{
+    width: 50% !important;
+    line-height: 32px;
+}
  .abs h2
  {
     text-transform: capitalize;
@@ -179,6 +214,7 @@
     padding: 30px 20px;
     position: relative;
  }
+ 
  .skills .skill span
  {
     position: absolute;
@@ -220,6 +256,10 @@
  }
   @media(max-width:740px)
   {
+    .contact_page p
+    {
+        width: 60% !important;
+    }
     .exp .edu
     {
         grid-template-columns: 85%;
@@ -240,6 +280,10 @@
   }
   @media(max-width:620px)
   {
+    .contact_page p
+    {
+        width: 65% !important;
+    }
     .skills
     {
         grid-template-columns: 45% 45%;
@@ -271,6 +315,10 @@
 }
  @media(max-width:507px)
  {
+    .contact_page p
+    {
+        width: 80% !important;
+    }
     .skills
     {
         width: 100%;
@@ -290,9 +338,13 @@
  }
   @media(max-width:392px)
   {
+    .contact_page p
+    {
+        width: 90% !important;
+    }
     .project h1, .best
     {
-        font-size: 38px;
+        font-size: 34px;
     }
     .exp .edu
     {
@@ -313,6 +365,10 @@
   }
    @media(max-width:349px)
   {
+    .contact_page p
+    {
+        width: 90% !important;
+    }
     .resume_tabs li
     {
         width: 42%;

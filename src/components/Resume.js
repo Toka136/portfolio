@@ -1,21 +1,34 @@
-import { use, useEffect, useState } from "react";
-import { NavLink, useParams } from "react-router-dom";
+import { use, useEffect, useRef, useState } from "react";
+import { NavLink, useNavigate, useParams } from "react-router-dom";
 import Skills from './Skills'
 import Education from './Education'
 import Experience from './Experience'
 import About from './About'
 import './Resume.css'
+import gsap from "gsap";
 function Resume()
 {
     const param=useParams();
     const [sec1,set_sec]=useState("Experience");
-    const[active,setactive]=useState(false);
-    const[active2,setactive2]=useState(false);
-    const[active3,setactive3]=useState(false);
-    const[active4,setactive4]=useState(false);
+    const navigate=useNavigate();
+      const reff=useRef(null);
+      useEffect(()=>
+    {
+        function fun()
+        {
+            
+            gsap.fromTo(
+            reff.current,
+            {y:-50,opacity:0},
+            {y:0,opacity:1,duration: 1.5,
+        }
+        );
+        }
+        fun();
+    },[sec1])
     useEffect(()=>
     {
-        console.log("sec => ",param.sec);
+       
         if(param.sec==="experience")
         {
             set_sec("Experience")
@@ -31,6 +44,10 @@ function Resume()
         else if(param.sec==="about")
         {
             set_sec("About")
+        }
+        else
+        { console.log("sec => ",param.sec);
+           navigate('/resume/experience')
         }
     },[param])
     return(
@@ -52,7 +69,7 @@ function Resume()
                     </li>
                 </ul>
             </div>
-            <div className="topic">
+            <div className="topic" ref={reff}>
                {sec1==="Skills"?
                <Skills/>:sec1==="About"?
             <About/> :sec1==="Education"?<Education/>:<Experience/>}

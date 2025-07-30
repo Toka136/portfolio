@@ -13,6 +13,21 @@ import { Navigation, Pagination } from 'swiper/modules';
 gsap.registerPlugin(ScrollTrigger);
 function Projects()
 { 
+      const reff=useRef(null);
+      useEffect(()=>
+    {
+        function fun()
+        {
+            
+            gsap.fromTo(
+            reff.current,
+            {y:-50,opacity:0},
+            {y:0,opacity:1,duration: 1.5,
+        }
+        );
+        }
+        fun();
+    },[])
  
     const projects=[
         {
@@ -79,7 +94,7 @@ function Projects()
         // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
     return(
-        <div >
+        <div  ref={reff}>
         <div >
              <h1 className="best">
                 My <span>Best</span> Creations

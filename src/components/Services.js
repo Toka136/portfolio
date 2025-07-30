@@ -1,6 +1,23 @@
+import { useEffect, useRef } from "react";
 import Service from "./Service"
+import gsap from "gsap";
 
 function Services(){
+      const reff=useRef(null);
+      useEffect(()=>
+    {
+        function fun()
+        {
+            
+            gsap.fromTo(
+            reff.current,
+            {y:-50,opacity:0},
+            {y:0,opacity:1,duration: 1.5,
+        }
+        );
+        }
+        fun();
+    },[])
     const services=[
         {
             "num":"01",
@@ -29,7 +46,7 @@ function Services(){
         },
     ]
     return(
-        <div className="servs">
+        <div className="servs" ref={reff}>
             <h1 className="best">
                 What can I <span>do</span>
             </h1>

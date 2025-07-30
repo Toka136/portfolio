@@ -48,7 +48,7 @@ function Header()
                     <NavLink  className={({ isActive }) => isActive ? ' active1' : ''} to={'/services'}>services </NavLink>
                 </div>}
                {!screen&& <div className="contact">
-                    <NavLink> <i class="fa-solid fa-message"></i></NavLink>
+                    <NavLink to={'/contact'}> <i class="fa-solid fa-message"></i></NavLink>
                    
                 </div>}
                  {screen&&
@@ -57,10 +57,10 @@ function Header()
             </div>}
             </div>
             {icon&&<div className="tabs resize"  ref={reff}>
-                    <NavLink onClick={(()=>seticon(!icon))}   className="active1">home </NavLink>
+                    <NavLink onClick={(()=>seticon(!icon))}   className="active1" to={'/'}>home </NavLink>
                     <NavLink onClick={(()=>seticon(!icon))} to={"/projects"}>project </NavLink>
-                    <NavLink onClick={(()=>seticon(!icon))}  >about </NavLink>
-                    <NavLink onClick={(()=>seticon(!icon))} >get in touch </NavLink>
+                    <NavLink onClick={(()=>seticon(!icon))}  to={'/resume'}>about </NavLink>
+                    <NavLink onClick={(()=>seticon(!icon))} to={'/contact'} >get in touch </NavLink>
                 </div>}
         </div>
     )
