@@ -24,12 +24,19 @@ function Contact()
             <h1 className="best">
                 Get In <span>touch</span>
             </h1>
-            <p className="desc">Looking to partner or work together? Reach out through the form and I'll get back to you in the next 48 hours.</p>
-            <div><a href="mailto:tokakaram@212.gmail.com"><i class="fa-solid fa-envelope"></i> <p>tokakaram212@hmail.com</p></a> </div>
+          <div className="links_photo">
+
+             <div className="p_links">
+                            <p className="desc">Looking to partner or work together? Reach out through the form and I'll get back to you in the next 48 hours.</p>
+
+             <div><a href="mailto:tokakaram@212.gmail.com"><i class="fa-solid fa-envelope"></i> <p>tokakaram212@hmail.com</p></a> </div>
             <div><i class="fa-solid fa-phone"></i><p>+0201284995213</p></div>
-            
-               
-                <h4>Interested in working together<span>?</span></h4>
+           </div>
+             <div className='img_border'>
+                <img src="./profile.jpg" alt=''/>
+            </div>
+          </div>
+         <h4>Interested in working together<span>?</span></h4>
          <div className="info">
             <div className="links_h4"> 
             <div className='links'>

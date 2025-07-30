@@ -51,26 +51,121 @@
     color: #6e06f2;
 
 }
+.p_links
+{
+    margin-left: 20px;
+}
+/* .p_links  */
+.p_links > div
+{
+    display: flex;
+}
+.links_photo
+{
+    display: grid !important;
+    grid-template-columns: 57% 31%;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 0% !important;
+    align-items: center;
+    margin-top: 10px !important;
+}
+.contact_page .img_border
+{
+    width: 220px;
+    height: 220px;
+}
+.contact_page .img_border img
+{
+     width: 200px;
+    height: 200px;
+}
+.contact_page >div
+{
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.contact_page >div a:hover
+{
+    color: #6e06f2;
+}
+.contact_page >div,
+.contact_page >div a
+{
+    text-decoration: none;
+    display: flex;
+    /* align-items: center; */
+    color: black;
+    
+}
+.contact_page >div i
+{
+    margin-right: 10px;
+    font-size: 20px;
+    color: black;
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.contact_page >div i:hover
+{
+    background-color: white;
+   color: #6e06f2;
+   border-color: #6e06f2;
+}
+.contact_page p
+{
+    width: 80% !important;
+    line-height: 32px;
+    font-size: 20px !important;
+    margin-left: 0 !important;
+}
+
+@media(max-width:840px)
+{
+    .contact_page p
+    {
+        width: 100% 
+        !important;
+    }
+}
 @media(max-width:819px)
 {
     .links_h4
     {
         display: grid;
         grid-template-columns: 70% 
-    }.info .links
+    }
+    .links_photo
     {
-       /* justify-content: center !important; */
-       /* margin-left: 96px; */
+        display: flex !important;
+    flex-direction: column-reverse;
+    }
+    .contact_page p
+    {
+        width: 80% 
+        !important;
     }
 }
 @media (max-width: 650px) {
-    .info .links {
-        /* justify-content: start !important; */
-        /* margin-left: 148px; */
+      .contact_page p
+    {
+        width: 90% 
+        !important;
     }
 }
 @media(max-width:510px)
 {
+      .contact_page p
+    {
+        font-size: 18px !important;
+     
+    }
     .links_h4
     {
         /* display: grid; */
@@ -89,6 +184,11 @@
 }
 @media(max-width:410px)
 {
+      .contact_page p
+    {
+        width: 100% 
+        !important;
+    }
     .links_h4
     {
         /* display: grid; */
@@ -98,6 +198,11 @@
 }
 @media(max-width:350px)
 {
+      .contact_page p
+    {
+        font-size: 16px 
+        !important;
+    }
    .contact_page h4
    {
     font-size: 18px;

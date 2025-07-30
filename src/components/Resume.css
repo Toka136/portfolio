@@ -129,49 +129,7 @@
     align-items: center;
     justify-content: space-between;
 }
-.contact_page >div
-{
-    margin-left: 40px;
-    margin-top: 20px;
-}
-.contact_page >div a:hover
-{
-    color: #6e06f2;
-}
-.contact_page >div,
-.contact_page >div a
-{
-    text-decoration: none;
-    display: flex;
-    /* align-items: center; */
-    color: black;
-    
-}
-.contact_page >div i
-{
-    margin-right: 10px;
-    font-size: 20px;
-    color: black;
-    border: 1px solid black;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-.contact_page >div i:hover
-{
-    background-color: white;
-   color: #6e06f2;
-   border-color: #6e06f2;
-}
-.contact_page p
-{
-    width: 50% !important;
-    line-height: 32px;
-}
+
  .abs h2
  {
     text-transform: capitalize;
