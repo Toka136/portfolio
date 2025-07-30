@@ -102,6 +102,7 @@ function Projects()
          <div className="divv " >
                  <Swiper navigation={true} modules={[Navigation]} className="mySwiper"
       spaceBetween={50}
+      loop={true}
       slidesPerView= {screen?Sscreen<376?1:2:2}
       // onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}>
