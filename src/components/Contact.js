@@ -29,7 +29,7 @@ function Contact()
              <div className="p_links">
                             <p className="desc">Looking to partner or work together? Reach out through the form and I'll get back to you in the next 48 hours.</p>
 
-             <div><a href="mailto:tokakaram@212.gmail.com"><i class="fa-solid fa-envelope"></i> <p>tokakaram212@gmail.com</p></a> </div>
+             <div><a href="mailto:tokakaram212@gmail.com"><i class="fa-solid fa-envelope"></i> <p>tokakaram212@gmail.com</p></a> </div>
             <div><i class="fa-solid fa-phone"></i><p>+0201284995213</p></div>
            </div>
              <div className='img_border'>
