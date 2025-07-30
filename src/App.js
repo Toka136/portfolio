@@ -1,11 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
 import { Route, Routes } from 'react-router-dom';
 import Maininfo from './components/Mainifo';
 import Projects from './components/Projects';
 import Project from './components/Project';
-import About from './components/About';
 import Resume from './components/Resume';
 import Services from './components/Services';
 import Contact from './components/Contact';

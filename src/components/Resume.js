@@ -1,4 +1,4 @@
-import { use, useEffect, useRef, useState } from "react";
+import {  useEffect, useRef, useState } from "react";
 import { NavLink, useNavigate, useParams } from "react-router-dom";
 import Skills from './Skills'
 import Education from './Education'
@@ -49,6 +49,7 @@ function Resume()
         { console.log("sec => ",param.sec);
            navigate('/resume/experience')
         }
+ // eslint-disable-next-line react-hooks/exhaustive-deps
     },[param])
     return(
         <div className="resume">

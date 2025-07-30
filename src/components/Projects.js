@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom"
-import Project from "./Project"
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
 import { useEffect, useRef, useState } from "react";
@@ -7,8 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css'; // basic styles
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 // gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(ScrollTrigger);
 function Projects()
@@ -111,7 +109,7 @@ function Projects()
         {
           return <SwiperSlide key={index}>
       <div className="proj" onClick={(()=>getproject(f))}>
-        <img className ="proj_img"src={f.img}/>
+        <img className ="proj_img"src={f.img} alt=""/>
         <h3 className="proj_name">{f.name}</h3>
       </div>
     </SwiperSlide>

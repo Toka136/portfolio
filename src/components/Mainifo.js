@@ -35,7 +35,7 @@ function Maininfo()
             </div>
             <div className='img'>
                 <div className='img_border'>
-                <img src="./profile.jpg" alt='profile photo'/>
+                <img src="./profile.jpg" alt=''/>
             </div>
             </div>
             </div>

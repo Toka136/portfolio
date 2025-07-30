@@ -33,8 +33,8 @@ function Contact()
          <div className="info">
             <div className="links_h4"> 
             <div className='links'>
-                    <a target="_blank" href="https://github.com/Toka136"><i class="fa-brands fa-github"></i></a>
-                    <a  target="_blank" href="https://www.linkedin.com/in/toka-karam"><i class="fa-brands fa-linkedin"></i></a>
+                    <a rel="noreferrer" target="_blank" href="https://github.com/Toka136"><i class="fa-brands fa-github"></i></a>
+                    <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/toka-karam"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
                <div className='buttons'>
                     <NavLink to={'/contact'}> get in touch</NavLink>

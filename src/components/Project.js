@@ -55,8 +55,8 @@ function Project()
         {
             setproject(p);
         }
-
-    },[])
+// eslint-disable-next-line react-hooks/exhaustive-deps
+    },[param])
    
     return(
         project&&
