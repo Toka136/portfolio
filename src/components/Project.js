@@ -5,13 +5,13 @@ function Project()
 {
     const [project,setproject]=useState();
      const param=useParams();
-      const projects=[
+  const projects=[
         {
             "id":"1",
             "name":"E-Commerce",
             "about":"Developed a fully responsive e-commerce website using React. Implemented product listing, filtering, and a dynamic shopping cart with real-time updates.",
             "img":"/e-commerce.png",
-            "tool":["HTML" , "CSS" , "Bootstrap", "JavaScript" , "React"],
+            "tool":["JSX" , "CSS" , "Bootstrap", "JavaScript" , "React"],
             "linklive":"https://full-e-commerce.netlify.app/"
         },
         {
@@ -19,7 +19,7 @@ function Project()
             "name":"Weather-App",
             "about":"This website allows users to check the weather by simply entering a city name. It instantly shows today’s weather along with a detailed 5-day forecast. With a clean and responsive design, it’s perfect for staying prepared wherever you go.",
             "img":" /weather.png",
-            "tool":["HTML" , "CSS" , "Bootstrap", "JavaScript" , "React"],
+            "tool":["JSX" , "CSS" , "Bootstrap", "JavaScript" , "React"],
             "linklive":"https://weatherappforcity2.netlify.app/"
         },
         {
@@ -41,9 +41,9 @@ function Project()
         {
             "id":"5",
             "name":"Movora",
-            "about":"A modern film discovery and streaming interface that allows users to explore, search, and manage movies and TV shows (rate films ). Search functionality with real-time results , Browse trending, popular, and top-rated films,Responsive UI , User authentication and watchlist support.",
+            "about":"A modern film discovery and streaming interface that allows users to explore, search, and manage movies and TV shows (rate films ). Search functionality with real-time results , Browse trending, popular, and top-rated films,Responsive UI , User authentication and watchlist support",
             "img":" /movora.png",
-           "tool":["HTML" , "CSS" , "Bootstrap", "JavaScript" , "React","Redux"] ,
+           "tool":["JSX" , "CSS" , "Bootstrap", "JavaScript" , "React","Redux"] ,
            "linklive":"https://movoramovies.netlify.app/"
         },
     ]
