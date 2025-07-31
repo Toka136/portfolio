@@ -62,7 +62,9 @@ function Header()
             {icon&&<div className="tabs resize"  ref={reff}>
                     <NavLink onClick={(()=>seticon(!icon))}   className="active1" to={'/'}>home </NavLink>
                     <NavLink onClick={(()=>seticon(!icon))} to={"/projects"}>project </NavLink>
-                    <NavLink onClick={(()=>seticon(!icon))}  to={'/resume'}>experiences </NavLink>
+                     <nav>
+                     <Link  onClick={(()=>seticon(!icon))} to="/#experience">experiences</Link>
+    </nav>
                     <NavLink onClick={(()=>seticon(!icon))} to={'/contact'} >get in touch </NavLink>
                 </div>}
         </div>
