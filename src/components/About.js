@@ -21,13 +21,6 @@ function About()
     );
   }, []);
 
-    return(
-        <div className="about">
-            <h1 className="best">my <span>story</span></h1>
-            <p className='about_text'>computer science student with a passion for front-end development and a keen interest in creating user-friendly web applications. I am a responsible and organized individual eager to apply my skills in HTML, CSS, JavaScript, and React to build clean, efficient, and responsive web solutions. I am currently available for freelance work and am also seeking an internship or entry-level front-end developer role to gain professional experience and contribute to impactful projects.</p>
-           
-        </div>
-
-    )
+    
 }
 export default About

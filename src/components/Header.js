@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import './Header.css'
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
@@ -44,7 +44,10 @@ function Header()
                 {!screen&&<div className="tabs" >
                     <NavLink className={({ isActive }) => isActive ? ' active1' : ''} to={'/'} >home </NavLink>
                     <NavLink  className={({ isActive }) => isActive ? ' active1' : ''} to={"/projects"}>project </NavLink>
-                    <NavLink className={({ isActive }) => isActive ? ' active1' : ''}  to={'/resume'}>about </NavLink>
+                    {/* <a className={({ isActive }) => isActive ? ' active1' : ''} href="#">experiences </a> */}
+                     <nav>
+      <Link to="/#experience">experiences</Link>
+    </nav>
                     <NavLink  className={({ isActive }) => isActive ? ' active1' : ''} to={'/services'}>services </NavLink>
                 </div>}
                {!screen&& <div className="contact">
@@ -59,7 +62,7 @@ function Header()
             {icon&&<div className="tabs resize"  ref={reff}>
                     <NavLink onClick={(()=>seticon(!icon))}   className="active1" to={'/'}>home </NavLink>
                     <NavLink onClick={(()=>seticon(!icon))} to={"/projects"}>project </NavLink>
-                    <NavLink onClick={(()=>seticon(!icon))}  to={'/resume'}>about </NavLink>
+                    <NavLink onClick={(()=>seticon(!icon))}  to={'/resume'}>experiences </NavLink>
                     <NavLink onClick={(()=>seticon(!icon))} to={'/contact'} >get in touch </NavLink>
                 </div>}
         </div>

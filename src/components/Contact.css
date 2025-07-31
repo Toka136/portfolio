@@ -59,6 +59,7 @@
 .p_links > div
 {
     display: flex;
+    margin-left:73px ;
 }
 .links_photo
 {
@@ -85,9 +86,30 @@
     margin-left: 40px;
     margin-top: 20px;
 }
-.contact_page >div a:hover
+/* .contact_page >div a:hover
 {
     color: #6e06f2;
+} */
+.contact_page .connec div:nth-child(2)
+/* .contact_page .connec a */
+{
+    align-items: center;
+}
+/* .contact_page .connec div:nth-child(2),
+.contact_page .connec a
+
+{
+    box-shadow: 0 4px 7px #6e06f299; 
+    padding: 10px;
+    border: 5px;
+} */
+.contact_page .connec div:nth-child(2)
+{
+    display: flex;
+}
+.contact_page .connec p
+{
+    margin-bottom: 0;
 }
 .contact_page >div,
 .contact_page >div a
@@ -98,12 +120,12 @@
     color: black;
     
 }
-.contact_page >div i
+.contact_page .connec i
 {
     margin-right: 10px;
     font-size: 20px;
-    color: black;
-    border: 1px solid black;
+    color: white;
+    /* border: 1px solid black; */
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -112,13 +134,8 @@
     justify-content: center;
     cursor: pointer;
 }
-.contact_page >div i:hover
-{
-    background-color: white;
-   color: #6e06f2;
-   border-color: #6e06f2;
-}
-.contact_page p
+
+.contact_page >  p
 {
     width: 80% !important;
     line-height: 32px;

@@ -17,12 +17,13 @@
 .about_text
 {
     color: #4e525a;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     /* width: 50%; */
     line-height: 32px;
     margin-top: 20px;
     font-size: 18px;
     margin-left: 20px;
+    width: 80%;
 }
 .experience > div
 {
@@ -104,4 +105,12 @@
 .expr2 div:nth-child(2) p:nth-child(7)::before
 {
     top: 25%;
+}
+@media(max-width:600px)
+{
+    .about_text
+    {
+        width: 99%;
+        margin-left: 1%;
+    }
 }

@@ -11,6 +11,7 @@ function Project()
             "name":"E-Commerce",
             "about":"Developed a fully responsive e-commerce website using React. Implemented product listing, filtering, and a dynamic shopping cart with real-time updates.",
             "img":"/e-commerce.png",
+            "img2":"/e-commerce_all.png",
             "tool":["JSX" , "CSS" , "Bootstrap", "JavaScript" , "React"],
             "linklive":"https://full-e-commerce.netlify.app/"
         },
@@ -19,6 +20,7 @@ function Project()
             "name":"Weather-App",
             "about":"This website allows users to check the weather by simply entering a city name. It instantly shows today’s weather along with a detailed 5-day forecast. With a clean and responsive design, it’s perfect for staying prepared wherever you go.",
             "img":" /weather.png",
+            "img2":" /weather.png",
             "tool":["JSX" , "CSS" , "Bootstrap", "JavaScript" , "React"],
             "linklive":"https://weatherappforcity2.netlify.app/"
         },
@@ -26,7 +28,8 @@ function Project()
             "id":"3",
             "name":"Gotta",
             "about":"A job listing platform designed to connect employers with job seekers. The site features a responsive design,dynamic job filters, and interactive UI elements",
-            "img":" /gotta.png",
+            "img":"/gotta_all.png",
+            "img2":"/gotta.png ",
            "tool":["HTML" , "CSS" , "Bootstrap", "JavaScript"],
            "linklive":"https://toka136.github.io/gotta/"
         },
@@ -34,7 +37,8 @@ function Project()
             "id":"4",
             "name":"OminFood",
             "about":"Website for a food delivery service built with modern design principles.",
-            "img":" /omnifood.png",
+            "img":"/omnifood.png",
+            "img2":"/omnifood_all.png",
            "tool":["HTML" , "CSS" , "Bootstrap", "JavaScript"],
            "linklive":"https://toka136.github.io/omnifood/"
         },
@@ -43,6 +47,7 @@ function Project()
             "name":"Movora",
             "about":"A modern film discovery and streaming interface that allows users to explore, search, and manage movies and TV shows (rate films ). Search functionality with real-time results , Browse trending, popular, and top-rated films,Responsive UI , User authentication and watchlist support",
             "img":" /movora.png",
+            "img2":"/all_movora.png",
            "tool":["JSX" , "CSS" , "Bootstrap", "JavaScript" , "React","Redux"] ,
            "linklive":"https://movoramovies.netlify.app/"
         },
@@ -63,11 +68,11 @@ function Project()
         <div className="project">
             <h1>{ project.name}</h1>
            <div className="filmicon">
-            <a href={ project.linklive} > <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href={ project.linklive} >See it Live <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             
            </div>
             <div>
-                <img src={ project.img} alt="project img" />
+                <img src={ project.img2} alt="project img" />
             </div>
             <div className='proj_info'>
            <div>
