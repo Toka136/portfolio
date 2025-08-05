@@ -47,7 +47,7 @@ function Maininfo()
                 <p>I am a responsible and organized individual eager to apply my skills in HTML, CSS, JavaScript, and React to build clean, efficient, and responsive web solutions.</p>
                 
                 <div className='buttons'>
-                    <a  rel="noreferrer" href='https://drive.google.com/file/d/1F_qTVnyD697uBhCe1rVORoeaeEakhToE/view?usp=sharing' target='_blank'> my resume</a>
+                    <a  rel="noreferrer" href='https://drive.google.com/file/d/1bsk4v13S7l4634Ej4RGOujC6USKlhEI6/view?usp=sharing' target='_blank'> my resume</a>
                     <NavLink to={'/projects'}>browse projects</NavLink>
                 </div>
                 
