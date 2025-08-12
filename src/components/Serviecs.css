@@ -1,3 +1,7 @@
+.servs
+{
+    padding: 1px;
+}
 .serv_cont
 {
     width: 90%;
@@ -6,7 +10,7 @@
     grid-template-columns: 43% 43% ;
     justify-content: space-between;
     margin-top: 60px;
-    row-gap: 30px;
+    row-gap: 60px;
     padding-bottom: 20px;
 }
 .num

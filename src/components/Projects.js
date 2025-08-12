@@ -12,10 +12,16 @@ import './styless.css';
 
 // import required modules
 import { EffectCoverflow, Pagination } from 'swiper/modules';
+
+import { useDarkmode } from "../DarmmodeContext";
 // gsap.registerPlugin(ScrollTrigger);
+// import { useRecoilState } from "recoil";
 gsap.registerPlugin(ScrollTrigger);
+
 function Projects()
 { 
+  
+const[dark]=useDarkmode();
       const reff=useRef(null);
       useEffect(()=>
     {
@@ -100,12 +106,12 @@ function Projects()
         // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
     return(
-        <div  ref={reff}>
+        <div  ref={reff} className={dark?"special_ground_dark":"special_ground"}>
         <div >
-             <h1 className="best">
+             <h1 className={dark?"light best":"best"} >
                 My <span>Best</span> Creations
                 </h1>
-                <p className="desc">Designing and Developing Robust and Stylish Web Applications for a Decade and Counting</p> 
+                <p className={dark?"desc light_text":"desc"}>Designing and Developing Robust and Stylish Web Applications for a Decade and Counting</p> 
          </div>  
          <div className="divv " >
                  <Swiper

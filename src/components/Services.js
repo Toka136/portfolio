@@ -2,7 +2,10 @@ import { useEffect, useRef } from "react";
 import Service from "./Service"
 import gsap from "gsap";
 
+import { useDarkmode } from "../DarmmodeContext";
+
 function Services(){
+    const[dark]=useDarkmode();
       const reff=useRef(null);
       useEffect(()=>
     {
@@ -46,8 +49,8 @@ function Services(){
         },
     ]
     return(
-        <div className="servs" ref={reff}>
-            <h1 className="best">
+        <div className={dark?"servs dark_mode":"servs"} ref={reff}>
+            <h1 className={dark?"light best":"best"}>
                 What can I <span>do</span>
             </h1>
             <div className="serv_cont">

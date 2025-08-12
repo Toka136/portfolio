@@ -1,14 +1,16 @@
 import './Serviecs.css'
+import { useDarkmode } from '../DarmmodeContext';
 function Service(prop)
 {
+    const[dark]=useDarkmode();
     return(
-        <div className="serv">
+        <div className={dark?"serv box_shadow":"serv"}>
             <div className="num">
-                <span>{prop.serv.num}</span>
-                <i class="fa-solid fa-arrow-right"></i>
+                <span className={dark&&"light"}>{prop.serv.num}</span>
+                <i className={dark?"fa-solid fa-arrow-right light_icon":"fa-solid fa-arrow-right "}></i>
             </div>
             <h2>{prop.serv.title}</h2>
-            <p>{prop.serv.desc}</p>
+            <p className={dark&&"light_text"}>{prop.serv.desc}</p>
         </div>
     )
 }

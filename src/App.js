@@ -7,10 +7,12 @@ import Project from './components/Project';
 import Resume from './components/Resume';
 import Services from './components/Services';
 import Contact from './components/Contact';
+// import { RecoilRoot } from 'recoil';
 
 function App() {
   return (
     <>
+     
     <Header/>
    
      <Routes>
@@ -22,6 +24,7 @@ function App() {
         <Route path='/services' element={<Services/>}/>
         <Route path='/contact' element={<Contact/>}/>
      </Routes>
+  
      </>
   );
 }

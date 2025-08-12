@@ -2,8 +2,10 @@ import { NavLink } from "react-router-dom";
 import './Contact.css'
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import { useDarkmode } from "../DarmmodeContext";
 function Contact()
 {
+    const[dark]=useDarkmode();
       const reff=useRef(null);
       useEffect(()=>
     {
@@ -20,14 +22,14 @@ function Contact()
         fun();
     },[])
     return(
-        <div className="contact_page" ref={reff}>
-            <h1 className="best">
+        <div className={dark?"contact_page dark_mode padding_mode":"contact_page  "} ref={reff}>
+            <h1 className={dark?"light best":"best"}>
                 Get In <span>touch</span>
             </h1>
           <div className="links_photo">
 
              <div className="p_links">
-                            <p className="desc">Looking to partner or work together? Reach out through the form and I'll get back to you in the next 48 hours.</p>
+                            <p className={dark?"desc light_text":"desc"}>Looking to partner or work together? Reach out through the form and I'll get back to you in the next 48 hours.</p>
 {/* <a href="mailto:tokakaram212@gmail.com">emi</a> */}
             <div className="connec">
                  <div><a   rel="noreferrer" target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=tokakaram@gmail.com"><i class="fa-solid fa-envelope"></i>  <span>Email me</span></a> </div>
@@ -38,7 +40,7 @@ function Contact()
                 <img src="./profile.jpg" alt=''/>
             </div>
           </div>
-         <h4>Interested in working together<span>?</span></h4>
+         <h4 className={dark&&"light_text"}>Interested in working together<span>?</span></h4>
          <div className="info">
             <div className="links_h4"> 
             <div className='links'>

@@ -2,6 +2,7 @@
   {
     color: #6e06f2;
     margin-left: 3px;
+    
   }
    .contact_page .buttons
 {
@@ -86,10 +87,14 @@
     margin-left: 40px;
     margin-top: 20px;
 }
-/* .contact_page >div a:hover
+.contact_page
 {
-    color: #6e06f2;
-} */
+    padding: 1px;
+}
+.contact_page .desc
+{
+    width: 80% !important;
+}
 .contact_page .connec div:nth-child(2)
 /* .contact_page .connec a */
 {
@@ -229,5 +234,9 @@
    .contact_page h4
    {
     font-size: 18px;
+   }
+   .p_links > div
+   {
+    margin-left: 0;
    }
 }
