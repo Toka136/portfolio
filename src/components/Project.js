@@ -5,7 +5,7 @@ function Project()
 {
     const [project,setproject]=useState();
      const param=useParams();
-   const projects=[
+    const projects=[
         {
             "id":"1",
             "name":"E-Commerce",
@@ -13,7 +13,8 @@ function Project()
             "img":"/e-commerce.png",
             "img2":"/e-commerce_all.png",
             "tool":["JSX" , "CSS" , "Bootstrap", "JavaScript" , "React"],
-            "linklive":"https://full-e-commerce.netlify.app/"
+            "linklive":"https://full-e-commerce.netlify.app/",
+            "linkgithub":"https://github.com/Toka136/e-commerce.git"
         },
         {
             "id":"2",
@@ -22,7 +23,8 @@ function Project()
             "img":" /weather.png",
             "img2":" /weather.png",
             "tool":["JSX" , "CSS" , "Bootstrap", "JavaScript" , "React"],
-            "linklive":"https://weatherappforcity2.netlify.app/"
+            "linklive":"https://weatherappforcity2.netlify.app/",
+            "linkgithub":"https://github.com/Toka136/WeatherApp.git"
         },
         {
             "id":"3",
@@ -31,7 +33,8 @@ function Project()
             "img":"./healthcare.png",
             "img2":"/Website.png ",
            "tool":["JSX" , "CSS" , "Bootstrap", "JavaScript" ,"React","Redux Toolkit","Framer Motion","Formik/Yup"],
-           "linklive":"https://healtcare-prescripto.netlify.app/"
+           "linklive":"https://healtcare-prescripto.netlify.app/",
+          "linkgithub": "https://github.com/Toka136/Prescripto_HealtCare.git"
         },
         {
             "id":"4",
@@ -40,7 +43,8 @@ function Project()
             "img":"/omnifood.png",
             "img2":"/omnifood_all.png",
            "tool":["HTML" , "CSS" , "Bootstrap", "JavaScript"],
-           "linklive":"https://toka136.github.io/omnifood/"
+           "linklive":"https://toka136.github.io/omnifood/",
+           "linkgithub":"https://github.com/Toka136/omnifood.git"
         },
         {
             "id":"5",
@@ -49,7 +53,8 @@ function Project()
             "img":" /movora.png",
             "img2":"/all_movora.png",
            "tool":["JSX" , "CSS" , "Bootstrap", "JavaScript" , "React","Redux"] ,
-           "linklive":"https://movoramovies.netlify.app/"
+           "linklive":"https://movoramovies.netlify.app/",
+           "linkgithub":"https://github.com/Toka136/Movora.git"
         },
     ]
     useEffect(()=>
@@ -68,7 +73,8 @@ function Project()
         <div className="project">
             <h1>{ project.name}</h1>
            <div className="filmicon">
-            <a href={ project.linklive} >See it Live <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href={ project.linklive }  target='blank'><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href={ project.linkgithub} target='blank' > <i class="fa-brands fa-github"></i></a>
             
            </div>
             <div>

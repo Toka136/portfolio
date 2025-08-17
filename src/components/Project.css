@@ -226,6 +226,13 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     }
    
 }
+.filmicon
+{
+    display: flex;
+    width: 80%;
+    margin-right: 10%;
+    justify-content: end;
+}
 .filmicon a
 {
     display: flex;
@@ -236,7 +243,11 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     cursor: pointer;
     padding: 3px;
     border-radius: 5px;
-
+    margin-left: 10px;
+    justify-content: center;
     
 }
-/* .filmicon a  */
+.filmicon a  i
+{
+    font-size: 20px;
+}

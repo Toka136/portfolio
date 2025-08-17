@@ -46,7 +46,8 @@ const[dark]=useDarkmode();
             "img":"/e-commerce.png",
             "img2":"/e-commerce_all.png",
             "tool":["JSX" , "CSS" , "Bootstrap", "JavaScript" , "React"],
-            "linklive":"https://full-e-commerce.netlify.app/"
+            "linklive":"https://full-e-commerce.netlify.app/",
+            "linkgithub":"https://github.com/Toka136/e-commerce.git"
         },
         {
             "id":"2",
@@ -55,7 +56,8 @@ const[dark]=useDarkmode();
             "img":" /weather.png",
             "img2":" /weather.png",
             "tool":["JSX" , "CSS" , "Bootstrap", "JavaScript" , "React"],
-            "linklive":"https://weatherappforcity2.netlify.app/"
+            "linklive":"https://weatherappforcity2.netlify.app/",
+            "linkgithub":"https://github.com/Toka136/WeatherApp.git"
         },
         {
             "id":"3",
@@ -64,7 +66,8 @@ const[dark]=useDarkmode();
             "img":"./healthcare.png",
             "img2":"/Website.png ",
            "tool":["JSX" , "CSS" , "Bootstrap", "JavaScript" ,"React","Redux Toolkit","Framer Motion","Formik/Yup"],
-           "linklive":"https://healtcare-prescripto.netlify.app/"
+           "linklive":"https://healtcare-prescripto.netlify.app/",
+          "linkgithub": "https://github.com/Toka136/Prescripto_HealtCare.git"
         },
         {
             "id":"4",
@@ -73,7 +76,8 @@ const[dark]=useDarkmode();
             "img":"/omnifood.png",
             "img2":"/omnifood_all.png",
            "tool":["HTML" , "CSS" , "Bootstrap", "JavaScript"],
-           "linklive":"https://toka136.github.io/omnifood/"
+           "linklive":"https://toka136.github.io/omnifood/",
+           "linkgithub":"https://github.com/Toka136/omnifood.git"
         },
         {
             "id":"5",
@@ -82,7 +86,8 @@ const[dark]=useDarkmode();
             "img":" /movora.png",
             "img2":"/all_movora.png",
            "tool":["JSX" , "CSS" , "Bootstrap", "JavaScript" , "React","Redux"] ,
-           "linklive":"https://movoramovies.netlify.app/"
+           "linklive":"https://movoramovies.netlify.app/",
+           "linkgithub":"https://github.com/Toka136/Movora.git"
         },
     ]
     const navigate=useNavigate();
