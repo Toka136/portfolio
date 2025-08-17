@@ -59,12 +59,12 @@ const[dark]=useDarkmode();
         },
         {
             "id":"3",
-            "name":"Gotta",
-            "about":"A job listing platform designed to connect employers with job seekers. The site features a responsive design,dynamic job filters, and interactive UI elements",
-            "img":"/gotta_all.png",
-            "img2":"/gotta.png ",
-           "tool":["HTML" , "CSS" , "Bootstrap", "JavaScript"],
-           "linklive":"https://toka136.github.io/gotta/"
+            "name":"healtcare-prescripto",
+            "about":"a modern healthcare web platform designed to simplify patient interactions. The application includes features such as Admin profiles with specializations, booking slots for appointments, patient-friendly navigation, and secure user authentication.  ensuring a responsive and user-friendly interface.",
+            "img":"./healthcare.png",
+            "img2":"/Website.png ",
+           "tool":["JSX" , "CSS" , "Bootstrap", "JavaScript" ,"React","Redux Toolkit","Framer Motion","Formik/Yup"],
+           "linklive":"https://healtcare-prescripto.netlify.app/"
         },
         {
             "id":"4",
