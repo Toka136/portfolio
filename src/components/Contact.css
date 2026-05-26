@@ -147,6 +147,9 @@
     font-size: 20px !important;
     margin-left: 0 !important;
 }
+.contact_page{
+    min-height: 100dvh;
+}
 
 @media(max-width:840px)
 {

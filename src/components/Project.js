@@ -6,16 +6,7 @@ function Project()
     const [project,setproject]=useState();
      const param=useParams();
     const projects=[
-        {
-            "id":"1",
-            "name":"E-Commerce",
-            "about":"Developed a fully responsive e-commerce website using React. Implemented product listing, filtering, and a dynamic shopping cart with real-time updates.",
-            "img":"/e-commerce.png",
-            "img2":"/e-commerce_all.png",
-            "tool":["JSX" , "CSS" , "Bootstrap", "JavaScript" , "React"],
-            "linklive":"https://full-e-commerce.netlify.app/",
-            "linkgithub":"https://github.com/Toka136/e-commerce.git"
-        },
+       
         {
             "id":"2",
             "name":"Weather-App",

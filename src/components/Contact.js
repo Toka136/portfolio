@@ -32,7 +32,7 @@ function Contact()
                             <p className={dark?"desc light_text":"desc"}>Looking to partner or work together? Reach out through the form and I'll get back to you in the next 48 hours.</p>
 {/* <a href="mailto:tokakaram212@gmail.com">emi</a> */}
             <div className="connec">
-                 <div><a   rel="noreferrer" target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=tokakaram@gmail.com"><i class="fa-solid fa-envelope"></i>  <span>Email me</span></a> </div>
+                 <div><a   rel="noreferrer" target="_blank" href="mailto:tokakaram212@gmail.com"><i class="fa-solid fa-envelope"></i>  <span>Email me</span></a> </div>
             <div><a  rel="noreferrer" href="https://wa.me/+201284995213" target="_blank"><i class="fa-brands fa-whatsapp"></i><p>call me</p></a></div>
             </div>
            </div>
