@@ -58,7 +58,7 @@ const[dark]=useDarkmode();
             </div>
             <div className='img'>
                 <div className='img_border'>
-                <img src="./profile.jpg" alt=''/>
+                <img src="./profile.jpeg" alt=''/>
             </div>
             </div>
             </div>

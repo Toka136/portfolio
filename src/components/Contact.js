@@ -37,7 +37,7 @@ function Contact()
             </div>
            </div>
              <div className='img_border'>
-                <img src="./profile.jpg" alt=''/>
+                <img src="./profile.jpeg" alt=''/>
             </div>
           </div>
          <h4 className={dark&&"light_text"}>Interested in working together<span>?</span></h4>
